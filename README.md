@@ -21,5 +21,5 @@ String customerLoginName = 'John Doe';
 manager.getToken(customerLoginID, customerLoginName);
 manager.addPaymentMethod('01/2020', '4580458045804580', '123','test@email.com', 'test@email.com', manager.CustomerToken);
 manager.openPayment(100, customerLoginID);
-manager.sale(zm.PaymentResponse.paymentToken, zm.PaymentMethodToken);
+manager.sale(zm.PaymentResponse.paymentToken, manager.PaymentMethodToken);
 ```
